@@ -169,6 +169,185 @@
   color: #bdbdbd;
   font-size: 14px;
 }
+
+
+        
+/* ======================
+   TABLET
+====================== */
+
+@media (max-width: 900px) {
+
+  .hero-content,
+  .custom-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding:
+      130px 0 70px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    height: 400px;
+  }
+
+  .advantages,
+  .product-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .contact-box {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+
+/* ======================
+   MOBILE
+====================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    background: #111;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+
+    top: 76px;
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding: 20px 5%;
+
+    background: #151515;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    width: 100%;
+
+    padding: 15px 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.08);
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    height: 330px;
+  }
+
+  .advantages,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 360px;
+  }
+
+  .custom-image img {
+    height: 400px;
+  }
+
+  .section,
+  .welcome {
+    padding: 70px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+
+/* ======================
+   SMALL MOBILE
+====================== */
+
+@media (max-width: 420px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-image img {
+    height: 270px;
+  }
+
+  .product-card img {
+    height: 290px;
+  }
+
+  /* PEMBUNGKUS SEMUA CARD */
+  .cards-container {
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    width: 100%;
+  }
+@media (max-width: 420px) {
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+  /* MASING-MASING CARD */
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
 /* ======================
    RESPONSIVE KATALOG
 ====================== */
