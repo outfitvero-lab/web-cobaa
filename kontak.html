@@ -1,0 +1,138 @@
+<!-- KONTAK -->
+    <section class="section contact" id="kontak">
+      <div class="container contact-box">
+         <link rel="stylesheet" href="style.css" />
+
+
+
+
+     <div>
+          <p class="section-label">LET'S CREATE</p>
+
+          <h2>
+            Siap Bikin Seragam
+            yang Lebih Berkelas?
+          </h2>
+
+          <p>
+            Konsultasikan desain dan kebutuhan kamu dengan tim
+            Nura Store Blitar.
+          </p>
+        </div>
+
+<header class="navbar">
+    <div class="container nav-wrapper">
+
+      <a href="beranda.html" class="brand">
+        <img src="LOGO ALL SOSMED.png" alt="Nura Store" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        ☰
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="beranda.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+    </div>
+  </header>
+   
+      
+
+        <!-- GANTI NOMOR WA -->
+        <a
+          href="https://wa.me/6285813395191"
+          target="https://wa.me/6285813395191"
+          class="btn btn-whatsapp"
+        >
+          Chat WhatsApp
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-wrapper">
+      <p>© 2026 Nura Store Blitar</p>
+      <p>Vendor Jaket & Seragam Custom</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+<style>
+
+    /* ======================
+   CONTACT
+====================== */
+
+
+.contact {
+  background: #e85d89;
+  padding: 140px;
+}
+
+.contact-box {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.contact .section-label {
+  color: #ffffff;
+
+}
+
+.contact h2 {
+  max-width: 650px;
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  max-width: 650px;
+  font-size: 20px;
+}
+
+.btn-whatsapp {
+  background: #151515;
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 100x;
+  max-height: 20px;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  background: #303030;
+}
+
+</style>

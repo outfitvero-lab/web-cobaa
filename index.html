@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nura Store Blitar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+
+      <a href="beranda.html" class="brand">
+        <img src="LOGO ALL SOSMED.png" alt="Nura Store" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        ☰
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="beranda.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+     <!-- HERO / BERANDA -->
+  <main>
+
+    <section class="hero" id="beranda">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <span class="mini-title">NURA STORE BLITAR</span>
+
+          <h1>
+            Temukan Gayamu.<br />
+            <span>Bikin Seragam Sesukamu.</span>
+          </h1>
+
+          <p>
+            Vendor jaket dan seragam custom untuk kelas, sekolah,
+            komunitas, organisasi hingga instansi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="katalog.html" class="btn btn-primary">
+              Lihat Katalog
+            </a>
+
+            <a href="kontak.html" class="btn btn-outline">
+              Konsultasi Sekarang
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="jaket.jpg" alt="Jaket custom Nura Store" />
+        </div>
+
+      </div>
+    </section>
+
+
+    <style>
+
+        /* =========================
+   KATALOG - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .catalog-card {
+    width: 100%;
+  }
+
+  .catalog-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+}
+    </style>
+
+      <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    });
+  </script>

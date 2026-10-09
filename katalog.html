@@ -1,0 +1,213 @@
+    <!-- KATALOG -->
+    <section class="section katalog" id="katalog">
+      <div class="container">
+         <link rel="stylesheet" href="style.css" />
+
+
+<header class="navbar">
+    <div class="container nav-wrapper">
+
+      <a href="beranda.html" class="brand">
+        <img src="LOGO ALL SOSMED.png" alt="Nura Store" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        ☰
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="beranda.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+        <div class="section-heading">
+          <p class="section-label">OUR PRODUCT</p>
+          <h2>Katalog Produk</h2>
+          <p>
+            Beberapa pilihan produk custom yang bisa kamu pesan di
+            Nura Store Blitar.
+          </p>
+        </div>
+
+    
+
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <img src="JAKET PERUSAHAAN.png" alt="Jaket Varsity Custom" />
+            <div class="product-info">
+              <h3>Jaket Perusahaan</h3>
+              <p>Seragam profesional untuk karyawan, tim perusahaan, gathering, dan kebutuhan corporate.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="JAKET INSTANSI.png" alt="Hoodie Custom" />
+            <div class="product-info">
+              <h3>Jaket Instansi</h3>
+              <p>Seragam custom untuk dinas, lembaga, yayasan, tenaga kesehatan, dan kebutuhan instansi lainnya.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="JAKET KELAS.png" alt="Work Jacket Custom" />
+            <div class="product-info">
+              <h3>Jaket Kelas/Sekolah</h3>
+              <p>Untuk PAUD hingga SMA, study tour, class meeting, pensi, dies natalis, dan ekstrakurikuler.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="JAKET ORGANISASI KOMU.png" alt="Work Jacket Custom" />
+            <div class="product-info">
+              <h3>Jaket Organisasi/Komunitas</h3>
+              <p>Tunjukkan identitas tim untuk BEM, HIMA, UKM, Karang Taruna, Ormas, hingga berbagai komunitas.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+         <article class="product-card">
+            <img src="JAKET COUPLE FAMILY.png" alt="Work Jacket Custom" />
+            <div class="product-info">
+              <h3>Jaket Couple Pasangan/Keluarga</h3>
+              <p>Jaket custom senada untuk pasangan dan keluarga di berbagai momen spesial.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="JAKET EVENT.png"Work Jacket Custom" />
+            <div class="product-info">
+              <h3>Jaket Event</h3>
+              <p>Seragam tim untuk panitia, EO, perlombaan, reuni, gathering, dan berbagai acara lainnya.</p>
+              <a href="kontak.html">Tanya Produk →</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <style>
+
+        
+/* ======================
+   PRODUCT
+====================== */
+
+.katalog {
+  background: #151515;
+}
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.product-card {
+  overflow: hidden;
+
+  background: #000000;
+
+  border-radius: 12px;
+}
+
+.product-card img {
+  height: 340px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h3 {
+  margin-bottom: 8px;
+}
+
+.product-info p {
+  color: #bcbcbc;
+  font-size: 14px;
+
+  margin-bottom: 18px;
+}
+
+.product-info a {
+  color: #e85d89;
+  font-weight: 700;
+}
+
+.hero-text p {
+  max-width: 590px;
+
+  color: #cfcfcf;
+
+  font-size: 16px;
+
+  margin-bottom: 34px;
+}
+
+.advantage-card p {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+/* ======================
+   RESPONSIVE KATALOG
+====================== */
+
+@media (max-width: 768px) {
+
+  .product-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 20px;
+  }
+}
+
+    </style>
+
+      <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    });
+  </script>
